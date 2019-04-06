@@ -21,6 +21,14 @@ h3 {
     font-weight: bold;
 }
 
+.primary {
+	color: #d35400;
+}
+
+.secondary {
+	color: #3498db;
+}
+
 /*-----------------------------------------
 2. SECCION HEADER "#header"
 ------------------------------------------*/
@@ -283,6 +291,7 @@ input:focus,textarea:focus {
 	border-color: #d35400;
 	color: #fff;
 }
+
 
 
 /*--------------------------------------------
