@@ -1,0 +1,144 @@
+/*------------------------------
+1. TIPOGRAFIA DEL SITIO
+--------------------------------*/
+html{
+    font-size: 13px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+	line-height: 1.5;
+}
+
+/*-----------------------------------------
+2. SECCION HEADER "#header"
+------------------------------------------*/
+#header {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.hero {
+    flex-grow: 1;
+}
+  
+/*ESTILOS PARA INTERNET EXPLORER 11+*/
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    body {
+        display: flex;
+        flex-direction: column;
+   }
+    .navbar {
+        min-height: 1px;
+   }
+}
+
+/*-----------------------------------------
+3. SECCION BARRA DE NAVEGACIÓN ".navbar"
+------------------------------------------*/
+.navbar a {
+    color:white;
+    transition: color .5s;
+}
+
+.navbar a:hover {
+    color: #d35400;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.logo {
+    font-size:2.25rem;
+}
+
+
+/*-----------------------------------------
+3. SECCION BARRA DE NAVEGACIÓN ".navbar"
+------------------------------------------*/
+.hero {
+    background: url('../img/slider.jpg') no-repeat center center / cover;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	text-align: center;
+}
+
+.hero:before {
+	content: "";
+	background: rgba(0,0,0,0.65);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.hero h1 {
+    font-size: 1.5rem;
+}
+
+.hero .text,.hero .typed-cursor {
+    display: inline;
+    font-size: 3.5rem;
+}
+
+.cta-div {
+	margin-top: 50px;
+}
+
+a.cta {
+	cursor: pointer;
+	color: #fff;
+	font-size: 15px;
+	padding: 12px 36px;
+	position: relative;
+	font-weight: bold;
+}
+
+a.cta:hover {
+	background: #d35400;
+}
+
+a.cta:after {
+	content: '';
+	width:100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border:1px solid #fff;
+	opacity: 1;
+	transition: all 0.5s ease;
+}
+
+a.cta:hover:after {
+	transform:scale(1.3);
+	background-color: #d35400;
+	opacity: 0;
+	border-color: #d35400;
+}
+
+
+/*--------------------------------------------
+12. EMPIEZAN LAS MEDIAS QUERIES
+----------------------------------------------*/
+@media (min-width: 768px) {
+  
+    @media (min-width: 990px) {
+        html {
+            font-size: 16px;
+        }
+    }
+
+}
+
+@media (max-width: 576px) {
+    .hero .text, .hero .typed-cursor {
+        font-size: 2.5rem;
+    }
+}
