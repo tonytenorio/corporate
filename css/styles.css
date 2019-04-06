@@ -10,6 +10,16 @@ body{
 	line-height: 1.5;
 }
 
+h2 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 /*-----------------------------------------
 2. SECCION HEADER "#header"
 ------------------------------------------*/
@@ -123,6 +133,42 @@ a.cta:hover:after {
 	border-color: #d35400;
 }
 
+/*-----------------------------------------
+2. SECCION "#services"
+------------------------------------------*/
+.icon {
+	font-size: 24px;
+	transition:all 0.5s ease;
+}
+
+.services-inner {
+	padding:30px 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	transition:all 0.5s ease;
+}
+
+.service-title {
+	margin-bottom: 16px;
+	margin-top: 16px;
+}
+
+.services-inner:hover {
+	background-color: #333;
+	color: #fff;
+}
+
+.services-inner:hover h3 {
+	color: #3498db;
+}
+
+.services-inner:hover .icon {
+	color: #d35400;
+	transform:rotateY(180deg)scale(1.5);
+}
+
+.services-inner .services-inner-content {
+	font-size: 15px;
+}
 
 /*--------------------------------------------
 12. EMPIEZAN LAS MEDIAS QUERIES
