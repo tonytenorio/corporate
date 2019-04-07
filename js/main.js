@@ -6,7 +6,7 @@ $(document).ready(function() {
     });
 
     var typed = new Typed('.typed', {
-        strings: ["<strong class='primary'>SPARKY.</strong> ^2000", "<strong class='secondary'>Awesome Developers.</strong>^2000"],
+        strings: ["<strong class='primary'>SPARKY.</strong> ^2000", "<strong class='secondary'>Awesome.</strong>^2000"],
         smartBackspace: false,
         loop: true,
         showCursor:true,
