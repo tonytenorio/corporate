@@ -56,6 +56,10 @@ h3 {
 /*-----------------------------------------
 3. SECCION BARRA DE NAVEGACIÓN ".navbar"
 ------------------------------------------*/
+.navbar {
+  	transition: all .7s;
+}
+
 .navbar a {
     color:white;
     transition: color .5s;
@@ -71,6 +75,10 @@ h3 {
 
 .logo {
     font-size:2.25rem;
+}
+
+.custom-navbar {
+	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
 }
 
 

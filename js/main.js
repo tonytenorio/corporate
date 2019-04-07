@@ -16,6 +16,15 @@ $(document).ready(function() {
         startDelay:800
       });
 
+      $(window).scroll(function() {
+        let position = $(this).scrollTop();
+        if(position >= 200) {
+          $('nav.navbar').addClass('custom-navbar');
+        } else {
+          $('nav.navbar').removeClass('custom-navbar');
+        }
+      });
+
 
     $('#date').text(new Date().getFullYear());
 });
