@@ -1,5 +1,5 @@
 /*------------------------------
-1. TIPOGRAFIA DEL SITIO
+1. GENERAL STYLES
 --------------------------------*/
 html{
     font-size: 13px;
@@ -29,8 +29,13 @@ h3 {
 	color: #3498db;
 }
 
+.active {
+	color: #d35400 !important;
+	font-weight: bold;
+}
+
 /*-----------------------------------------
-2. SECCION HEADER "#header"
+2. HEADER SECTION "#header"
 ------------------------------------------*/
 #header {
     display: flex;
@@ -42,7 +47,7 @@ h3 {
     flex-grow: 1;
 }
   
-/*ESTILOS PARA INTERNET EXPLORER 11+*/
+/*INTERNET EXPLORER 11+*/
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     body {
         display: flex;
@@ -54,10 +59,11 @@ h3 {
 }
 
 /*-----------------------------------------
-3. SECCION BARRA DE NAVEGACIÓN ".navbar"
+3. NAV SECTION ".navbar"
 ------------------------------------------*/
-.navbar {
-  	transition: all .7s;
+.nav-menu {
+	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  	transition: all .5s;
 }
 
 .navbar a {
@@ -83,7 +89,7 @@ h3 {
 
 
 /*-----------------------------------------
-3. SECCION BARRA DE NAVEGACIÓN ".navbar"
+4. HERO SECTION ".hero"
 ------------------------------------------*/
 .hero {
     background: url('../img/slider.jpg') no-repeat center center / cover;
@@ -151,7 +157,7 @@ a.cta:hover:after {
 }
 
 /*-----------------------------------------
-2. SECCION "#services"
+5. SERVICES SECTION  "#services"
 ------------------------------------------*/
 .icon {
 	font-size: 24px;
@@ -188,7 +194,7 @@ a.cta:hover:after {
 }
 
 /*-----------------------------------------
-2. SECCION "#PROJECTS"
+6. PROJECTS SECTION "#projects"
 ------------------------------------------*/
 .project-item {
 	width: 100%;
@@ -252,7 +258,7 @@ a.cta:hover:after {
 }
 
 /*-----------------------------------------
-2. SECCION HEADER "#contact"
+7. CONTACT SECTION "#contact"
 ------------------------------------------*/
 .contact-info p {
 	margin-top: 15px;
@@ -300,22 +306,15 @@ input:focus,textarea:focus {
 	color: #fff;
 }
 
-/*--------------------------------------------
-12. FOOTER SECTION
-----------------------------------------------*/
-
 
 /*--------------------------------------------
-12. EMPIEZAN LAS MEDIAS QUERIES
+8. MEDIAS QUERIES START
 ----------------------------------------------*/
-@media (min-width: 768px) {
-  
-    @media (min-width: 990px) {
-        html {
-            font-size: 16px;
-        }
-    }
+@media(min-width: 990px){
 
+	html{
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 576px) {

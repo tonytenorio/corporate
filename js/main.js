@@ -1,3 +1,14 @@
+document.querySelectorAll('.navbar .nav-link').forEach(enlace => {
+    enlace.addEventListener('click', function (e) {
+        e.preventDefault();
+  
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    });
+  });
+
 $(document).ready(function() {
 
     $('.hero').ripples({
