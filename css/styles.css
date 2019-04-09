@@ -62,7 +62,7 @@ h3 {
 3. NAV SECTION ".navbar"
 ------------------------------------------*/
 .nav-menu {
-	background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+	padding: 30px;
   	transition: all .5s;
 }
 
@@ -84,6 +84,7 @@ h3 {
 }
 
 .custom-navbar {
+	padding: 5px 30px;
 	background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
 }
 
