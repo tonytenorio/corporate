@@ -10,10 +10,10 @@ Libraries used:
 
 - [jQuery 3.2.1](http://jquery.com/)
 - [Bootstrap 4](https://v4-alpha.getbootstrap.com/)
-- [JqueryRipplesPlugin] (https://github.com/sirxemic/jquery.ripples)
-- [typed.js] (https://mattboldt.com/demos/typed-js/)
+- [JqueryRipplesPlugin](https://github.com/sirxemic/jquery.ripples)
+- [typed.js](https://mattboldt.com/demos/typed-js/)
 
-Other things and cool stuff :
+# Cool stuff :
 
 - CSS 3 hover Effects
 - Smooth Scroll
