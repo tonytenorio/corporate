@@ -12,12 +12,12 @@ body{
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -92,7 +92,10 @@ h3 {
 4. HERO SECTION ".hero"
 ------------------------------------------*/
 .hero {
-    background: url('../img/slider.jpg') no-repeat center center / cover;
+	background-image: url('../img/slider.jpg') !important;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -320,5 +323,9 @@ input:focus,textarea:focus {
 @media (max-width: 576px) {
     .hero .text, .hero .typed-cursor {
         font-size: 2.5rem;
-    }
+	}
+	
+	.display-4 {
+		font-size: 2.5rem !important;
+   }
 }
